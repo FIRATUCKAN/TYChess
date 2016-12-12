@@ -1,2 +1,2 @@
-# tychess
+# TYChess
 Trendyol Chess Game
