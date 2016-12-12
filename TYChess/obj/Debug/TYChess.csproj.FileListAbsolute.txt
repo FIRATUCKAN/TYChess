@@ -1,0 +1,9 @@
+c:\users\metehan.senol\documents\visual studio 2015\Projects\TYChess\TYChess\bin\Debug\TYChess.exe.config
+c:\users\metehan.senol\documents\visual studio 2015\Projects\TYChess\TYChess\obj\Debug\TYChess.csprojResolveAssemblyReference.cache
+c:\users\metehan.senol\documents\visual studio 2015\Projects\TYChess\TYChess\obj\Debug\TYChess.Properties.Resources.resources
+c:\users\metehan.senol\documents\visual studio 2015\Projects\TYChess\TYChess\obj\Debug\TYChess.Tahta.resources
+c:\users\metehan.senol\documents\visual studio 2015\Projects\TYChess\TYChess\obj\Debug\TYChess.csproj.GenerateResource.Cache
+c:\users\metehan.senol\documents\visual studio 2015\Projects\TYChess\TYChess\bin\Debug\TYChess.exe
+c:\users\metehan.senol\documents\visual studio 2015\Projects\TYChess\TYChess\bin\Debug\TYChess.pdb
+c:\users\metehan.senol\documents\visual studio 2015\Projects\TYChess\TYChess\obj\Debug\TYChess.exe
+c:\users\metehan.senol\documents\visual studio 2015\Projects\TYChess\TYChess\obj\Debug\TYChess.pdb
