@@ -8,13 +8,21 @@ namespace TYChess
 {
     public class Kare : Control
     {
+        #region DevelopmentAmacli
         public string Adres { get; set; }
         public bool AdresiGoster { get; set; }
+        #endregion
+
+        public int ID { get; set; }
         public KareRengi KareRengi { get; set; }
-        public Tas Tas { get; set; }
+        //public Tas Tas { get; set; } /* bunu buradan kaldirmaliyiz */
         public bool IsSelected { get; set; }
-        public bool KonumGoster { get; set; }
-        public Konum Konum { get; set; }
+        public bool TasIziGoster { get; set; }
+        //public Konum Konum { get; set; }
+        public Konum Konum
+        {
+            get { return Program.AktifOyun.ElemanBul(ID).Konum; }
+        }
 
         public Kare(int x, int y, int width, int height)
         {
@@ -40,15 +48,14 @@ namespace TYChess
                 e.Graphics.DrawRectangle(p, 2, 2, e.ClipRectangle.Width - 4, e.ClipRectangle.Height - 4);
             }
 
-            if (KonumGoster)
-            {
+            if (TasIziGoster) {
                 SolidBrush sb = new SolidBrush(Color.Yellow);
                 e.Graphics.FillRectangle(sb, 0, 0, e.ClipRectangle.Width, e.ClipRectangle.Height);
             }
-                
 
-            if (Tas != null)
-                e.Graphics.DrawImage(Tas.GetIcon(), new Point(5, 5));
+            var eleman = Program.AktifOyun.ElemanBul(ID);
+            if (eleman.TasVarMi)
+                e.Graphics.DrawImage(eleman.Tas.GetIcon(), new Point(5, 5));
         }
 
         protected override void OnClick(EventArgs e)

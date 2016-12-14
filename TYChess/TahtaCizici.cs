@@ -26,22 +26,22 @@ namespace TYChess
                     k.Click += KareClick;
                     k.Click += Oyun.KareClick;
 
-                    if (Oyun.Baslangic.ContainsKey(adres))
-                    {
-                        Tas t = Oyun.Baslangic[adres];
-                        k.Tas = t;
-                        //t.Kare = k;
-                    }
+                    //if (Oyun.Baslangic.ContainsKey(adres))
+                    //{
+                    //    Tas t = Oyun.Baslangic[adres];
+                    //    k.Tas = t;
+                    //    //t.Kare = k;
+                    //}
 
                     k.Adres = adres;
-                    k.Konum = konum;
+                    //k.Konum = konum;
                     k.AdresiGoster = Oyun.AdresleriGoster;
 
                     if (i % 2 == 0)
                         k.KareRengi = (j % 2 == 0) ? KareRengi.Siyah : KareRengi.Beyaz;
                     else k.KareRengi = (j % 2 == 0) ? KareRengi.Beyaz : KareRengi.Siyah;
 
-                    Oyun.Kareler.Add(k);
+                    //Oyun.Kareler.Add(k);
                     Oyun.HedefTahta.KareEkle(k);
                 }
             }

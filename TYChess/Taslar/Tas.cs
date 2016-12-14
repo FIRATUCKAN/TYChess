@@ -10,7 +10,6 @@ namespace TYChess.Taslar
     {
         public TasRengi TasRengi { get; set; }
         public string ImageFileName { get; set; }
-        public string Adres { get; set; }
         public List<Konum> HareketAlani { get; set; }
 
         ResourceManager resManager;
