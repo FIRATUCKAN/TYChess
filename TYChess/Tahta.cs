@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Linq;
 using System.Windows.Forms;
-using System.Collections.Generic;
+using TYChess.KonumServisleri;
 
-using TYChess.Taslar;
 
 namespace TYChess
 {
@@ -20,28 +18,14 @@ namespace TYChess
         {
         }
 
-        //public void HareketYap(Kare kaynakKare, Kare hedefKare)
-        //{
-        //    hedefKare.Tas = kaynakKare.Tas;
-        //    hedefKare.Refresh();
-
-        //    kaynakKare.Tas = null;
-        //    kaynakKare.Refresh();
-        //}
-
+        
         private void btnOyunuBaslat_Click(object sender, EventArgs e)
         {
-            Oyun yeniOyun = new Oyun();
+            var yeniOyun = new Oyun();
             Program.AktifOyun = yeniOyun;
             KareleriCiz();
-            //yeniOyun.AdresleriGoster = true;
             yeniOyun.HedefTahta = this;
-            yeniOyun.OyunuTazele();
-
-            //TahtaCizici c = new TahtaCizici();
-            //c.Oyun = yeniOyun;
-            //c.Ciz();
-
+            
             
         }
 
@@ -60,9 +44,9 @@ namespace TYChess
                     Konum konum = new Konum(j + 1, i + 1);
                     Eleman eleman = Program.AktifOyun.ElemanBul(konum);
                     eleman.Kare = k;
-                    k.ID = eleman.ID;
+                    k.Id = eleman.Id;
                     
-                    this.Controls.Add(k);
+                    Controls.Add(k);
                 }
             }
         }
@@ -81,7 +65,7 @@ namespace TYChess
         public void AdresiLabelaYaz(string adres, Konum konum)
         {
             label1.Text = adres;
-            label2.Text = string.Format("{0}, {1}", konum.X, konum.Y);
+            label2.Text = $"{konum.X}, {konum.Y}";
         }
     }
 }

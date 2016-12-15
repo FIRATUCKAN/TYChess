@@ -61,7 +61,6 @@
     <Compile Include="Tahta.Designer.cs">
       <DependentUpon>Tahta.cs</DependentUpon>
     </Compile>
-    <Compile Include="TahtaCizici.cs" />
     <Compile Include="Taslar\At.cs" />
     <Compile Include="Taslar\Fil.cs" />
     <Compile Include="Taslar\Kale.cs" />

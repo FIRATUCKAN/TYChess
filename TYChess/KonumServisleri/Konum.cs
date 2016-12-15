@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-
-namespace TYChess
+﻿namespace TYChess.KonumServisleri
 {
     public struct Konum
     {
@@ -10,8 +7,8 @@ namespace TYChess
 
         public Konum(int x, int y)
         {
-            this.X = x;
-            this.Y = y;
+            X = x;
+            Y = y;
         }
 
         public void Sag() { X++; }

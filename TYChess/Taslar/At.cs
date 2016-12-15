@@ -1,6 +1,4 @@
-﻿using System;
-using System.Drawing;
-
+﻿
 namespace TYChess.Taslar
 {
     public class At : Tas

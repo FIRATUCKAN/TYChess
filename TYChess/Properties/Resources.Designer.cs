@@ -121,6 +121,15 @@ namespace TYChess.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {0}, {1}.
+        /// </summary>
+        internal static string Tahta_AdresiLabelaYaz__0____1_ {
+            get {
+                return ResourceManager.GetString("Tahta_AdresiLabelaYaz__0____1_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap white_bishop {
