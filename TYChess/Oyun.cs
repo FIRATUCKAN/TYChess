@@ -71,8 +71,8 @@ namespace TYChess
             if (!_doMove)
             {
                 ClearIsSelected();
-                //if (k.Tas != null)
-                //    k.Tas.HareketAlaniniHesapla(k.Konum);
+                if (ElemanBul(k.Konum).Tas != null)
+                    ElemanBul(k.Konum).Tas.HareketAlaniniHesapla(k.Konum);
                 // ReSharper disable once PossibleNullReferenceException
                 _kaynakKonum = k.Konum;
                 _doMove = true;
